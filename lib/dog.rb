@@ -5,7 +5,7 @@ class Dog
   
   def initialize(attributes)
     attributes.each do |key,value|
-      instance_variable_set("@#{key}",value) unless value = nil?
+      instance_variable_set("@#{key}",value) unless value.nil?
       @id ||= nil
     end
   end
